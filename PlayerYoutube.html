@@ -5,11 +5,9 @@
     <meta charset="utf-8">
     <title>PlayerYoutube</title>
     <style media="screen">
-        canvas {
+        html {
             background: #101010;
-            position: absolute;
         }
-
         body {
             margin: 0;
             overflow: hidden;
@@ -18,10 +16,12 @@
 </head>
 
 <body>
-    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-    <div id="player"></div>
+    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->        
+        <div id="player"></div>         
+    
+ 
 
-    <script>
+    <script>        
         // 2. This code loads the IFrame Player API code asynchronously.
         var tag = document.createElement('script');
 
@@ -38,6 +38,8 @@
                 height: '256',
                 width: '512',
                 videoId: 'otxSf5gsCNY',
+                //videoId: '',
+                //playlist: 'PLypsiFmvhDmMV_yzP6ct0-4l1sVYsIq_E',
                 controls: '0',
                 events: {
                     'onReady': onPlayerReady,
@@ -68,11 +70,11 @@
         }
         function stopVideo() {
             player.stopVideo();
-        }
-        //<canvas id="canvas"></canvas>
-        //var width = canvas.width = window.innerWidth;
-        //var height = canvas.height = window.innerHeight;
+        }       
+        
     </script>
+
+    
 </body>
 
 </html>
